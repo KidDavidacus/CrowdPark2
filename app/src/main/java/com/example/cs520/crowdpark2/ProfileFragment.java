@@ -135,7 +135,7 @@ public class ProfileFragment extends Fragment {
             Twitter twitter = new TwitterFactory(builder.build()).getInstance(accessToken);
 
             try {
-                twitter4j.Status response = twitter.updateStatus(tweetText +" @learn2crack ");
+                twitter4j.Status response = twitter.updateStatus(tweetText);
                 return response.toString();
             } catch (TwitterException e) {
                 // TODO Auto-generated catch block
